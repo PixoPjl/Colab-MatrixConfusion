@@ -1,36 +1,32 @@
-# Evaluation Metrics Calculation for Classification Models
+# Cálculo de Métricas de Avaliação para Modelos de Classificação
 
-## Project Description
+## Descrição do Projeto
 
-This project aims to calculate the primary metrics used to evaluate data classification models, including **accuracy**, **sensitivity (recall)**, **specificity**, **precision**, and **F-score**. The implementation of these metrics will be carried out using their respective formulas and specific methods.
+Este projeto tem como objetivo calcular as principais métricas usadas para avaliar modelos de classificação de dados, incluindo **acurácia**, **sensibilidade (recall)**, **especificidade**, **precisão** e **F-score**. A implementação dessas métricas será realizada utilizando suas respectivas fórmulas e métodos específicos.
 
-The basis for calculating these metrics will be a **confusion matrix**, which can be chosen arbitrarily to facilitate understanding the functioning of each metric. The project allows for flexibility in selecting the confusion matrix, allowing you to explore how different matrices influence the computed metrics.
+A base para o cálculo dessas métricas será uma **matriz de confusão**, que pode ser escolhida arbitrariamente para facilitar o entendimento do funcionamento de cada métrica. O projeto oferece flexibilidade na seleção da matriz de confusão, permitindo explorar como diferentes matrizes influenciam as métricas calculadas.
 
-## Metrics to be Calculated
+## Métricas a Serem Calculadas
 
-- **Accuracy**: The proportion of correct predictions (both true positives and true negatives) over all predictions.
+- **Acurácia**: A proporção de previsões corretas (verdadeiros positivos e verdadeiros negativos) sobre todas as previsões realizadas.
   
-- **Sensitivity (Recall)**: The rate of true positives correctly identified by the model.
+- **Sensibilidade (Recall)**: A taxa de verdadeiros positivos corretamente identificados pelo modelo.
   
-- **Specificity**: The rate of true negatives correctly identified by the model.
+- **Especificidade**: A taxa de verdadeiros negativos corretamente identificados pelo modelo.
   
-- **Precision**: The proportion of true positive predictions out of all positive predictions made by the model.
+- **Precisão**: A proporção de previsões verdadeiramente positivas em relação a todas as previsões positivas feitas pelo modelo.
   
-- **F-score**: The harmonic mean of precision and sensitivity, balancing the two metrics.
+- **F-score**: A média harmônica entre precisão e sensibilidade, equilibrando ambas as métricas.
 
-## Confusion Matrix
+## Matriz de Confusão
 
-A confusion matrix is used to calculate these metrics. The matrix contains the following values:
+Uma matriz de confusão é usada para calcular essas métricas. A matriz contém os seguintes valores:
 
-- **VP (True Positives)**: The cases where the model correctly predicted a positive class.
-- **FN (False Negatives)**: The cases where the model incorrectly predicted a negative class when it was actually positive.
-- **FP (False Positives)**: The cases where the model incorrectly predicted a positive class when it was actually negative.
-- **VN (True Negatives)**: The cases where the model correctly predicted a negative class.
+- **VP (Verdadeiros Positivos)**: Os casos onde o modelo previu corretamente uma classe positiva.
+- **FN (Falsos Negativos)**: Os casos onde o modelo previu incorretamente uma classe negativa quando era, na verdade, positiva.
+- **FP (Falsos Positivos)**: Os casos onde o modelo previu incorretamente uma classe positiva quando era, na verdade, negativa.
+- **VN (Verdadeiros Negativos)**: Os casos onde o modelo previu corretamente uma classe negativa.
 
-## Objective
+## Objetivo
 
-The goal is to understand how each metric functions by implementing and calculating the values based on the chosen confusion matrix.
-
-## Resources
-
-- **Table 1**: Overview of the metrics used to evaluate classification methods (with explanations of terms like VP, FN, FP, VN, and their corresponding formulas).
+O objetivo é entender como cada métrica funciona, implementando e calculando os valores com base na matriz de confusão escolhida.
